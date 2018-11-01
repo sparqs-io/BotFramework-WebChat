@@ -1,5 +1,5 @@
 {
-  "name": "botframework-webchat-root",
+  "name": "@sparqs/botframework-webchat-root",
   "version": "4.1.1-0",
   "private": true,
   "files": [
