@@ -100,7 +100,7 @@ const localizedStrings: LocalizedStrings = {
         messageRetry: 'wiederholen',
         messageFailed: 'konnte nicht senden',
         messageSending: 'sendet',
-        timeSent: ' um %1',
+        timeSent: '%1',
         consolePlaceholder: 'Verfasse eine Nachricht...',
         listeningIndicator: 'Hören...',
         uploadFile: '',

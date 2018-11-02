@@ -23,6 +23,11 @@ const timeStuff:TimeStuff = (timestamp:number) => {
     return [new Date (milliseconds).toLocaleDateString(), null]; 
 }
 
+const customTimeStuff: TimeStuff = (timestamp: number) => {
+    const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+    return [new Date(this.props.activity.timestamp).toLocaleTimeString("de-DE", options), null];
+}
+
 interface Props {
     timestamp: number
 }
@@ -35,7 +40,7 @@ export class Timestamp extends React.Component<Props, {}> {
     }
 
     private setNextRender(timestamp:number) {
-        const ts = timeStuff(timestamp);
+        const ts = customTimeStuff(timestamp);
         if (ts[1])
             this.nextRender = setTimeout(() => {
                 this.forceUpdate();
@@ -52,6 +57,6 @@ export class Timestamp extends React.Component<Props, {}> {
     }
 
     render() {
-        return <div className="wc-time">{ timeStuff(this.props.timestamp)[0] }</div>;
+        return <div className="wc-time">{ customTimeStuff(this.props.timestamp)[0] }</div>;
     }
 }
