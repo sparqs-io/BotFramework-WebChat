@@ -90,7 +90,7 @@ const localizedStrings: LocalizedStrings = {
         speak: ''
     },
     'de-de': {
-        title: 'Chat',
+        title: 'BERATUNGS-CHAT',
         send: 'Senden',
         unknownFile: '[Datei vom Typ \'%1\']',
         unknownCard: '[Unbekannte Card \'%1\']',
